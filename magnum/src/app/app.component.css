@@ -1,0 +1,173 @@
+h1 {
+    text-align: center;
+    border: 5px solid darkblue;
+    border-radius: 15px;
+    background-color: yellow;
+    color: black;
+    padding: 10px;
+    /* Slightly increased padding for better touch targets */
+    margin: 20px auto;
+    /* Adjusted top margin and auto for horizontal centering */
+    width: 80%;
+    /* Make it responsive, not fixed percentage from left */
+    max-width: 600px;
+    /* Set a maximum width for larger screens */
+    box-sizing: border-box;
+    /* Include padding and border in the element's total width and height */
+}
+
+.mid {
+    text-align: center;
+    font-size: 1.5em;
+    /* Use em for relative sizing */
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    margin-top:70px ;
+    margin-bottom: 50px;
+    /* Adjusted margin */
+}
+
+label {
+    border: 3px solid darkblue;
+    border-radius: 10px;
+    background-color: lightskyblue;
+    padding: 10px;
+    /* Increased padding */
+    margin-right: 5%;
+    /* Adjusted margin for better flow on smaller screens */
+    display: inline-block;
+    /* Allows for better spacing and responsiveness */
+    margin-bottom: 5px;
+    /* Add some bottom margin for smaller screens */
+}
+
+.num {
+    font-size: 0.8em;
+    font-weight: bolder;
+    border: 3px solid darkblue;
+    border-radius: 10px;
+    background-color: yellow;
+    padding: 10px;
+    /* Increased padding */
+    box-sizing: border-box;
+    /* Include padding and border in the element's total width */
+    width: 45%;
+    /* Adjust width for potential side-by-side display on larger screens */
+    max-width: 150px;
+    /* Set a maximum width */
+    margin-bottom: 10px;
+    /* Add some bottom margin */
+    display: inline-block;
+    /* Allows them to sit side-by-side on wider screens */
+}
+
+.num:focus {
+    background-color: white;
+}
+
+.ans {
+    text-align: center;
+    font-size: 1.2em;
+    /* Use em for relative sizing */
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    margin-top: 20px;
+    /* Add some top margin */
+}
+
+table {
+    margin: 20px auto;
+    width: 95%;
+    border-spacing: 10px;
+}
+td {
+    font-size: 1.2em;
+    font-weight: bolder;
+    font-family: 'Arial Narrow Bold';
+    border: 3px solid black;
+    border-radius: 10px;
+    background-color: green;
+    color: white;
+    padding: 8px;
+    text-align: center;
+    display: none;
+}
+
+.alert-container {
+    /* position: fixed; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%; 
+    top: 20px;
+  }
+  
+  .alert {
+    background-color:red; 
+    color: black; 
+    padding: 15px;
+    border: 3px solid darkred;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    text-align: center;
+    font-size: large;
+    font-weight: bolder;
+    width:70%;
+  }
+  
+  .icon {
+    font-size: 15px; 
+    margin-right: 7px; 
+  }
+
+
+
+/* Media Query for larger screens (e.g., tablets and desktops) */
+@media (min-width: 768px) {
+    h1 {
+        margin: 12% auto 50px;
+        /* Revert to your original top margin for larger screens */
+        width: 60%;
+    }
+
+    label {
+        margin-right: 2%;
+        /* Revert to your original right margin */
+    }
+
+    .num {
+        width: auto;
+        /* Allow them to size based on content */
+        max-width: none;
+        /* Remove max-width on larger screens */
+        margin-right: 10px;
+        /* Add some right margin between inputs */
+        display: inline-block;
+    }
+
+    table {
+        width: 70%; /* Revert to the original width */
+        border-spacing: 25px; /* Revert to the original border spacing */
+      }
+    
+      td {
+        font-size: 1.5em; /* Revert to the original font size */
+        border: 3px solid black; /* Revert to the original border thickness */
+        border-radius: 15px; /* Revert to the original border radius */
+        padding: 10px; /* Revert to the original padding */
+      }
+    
+      .alert{
+        width:30%;
+        font-size: x-large;
+      }
+
+      .icon{
+        font-size: 25px;
+        margin-right: 17px;
+      }
+}
+
+

@@ -1,0 +1,40 @@
+<!-- <router-outlet></router-outlet> -->
+<!-- 
+<html>
+<body>  -->
+<!-- <div class="container"> -->
+<h1>Magical Numbers</h1>
+<!-- <form >   -->
+
+<div class="mid">
+  <label for="number">Enter the Number</label>
+  <input type="text" class="num" [(ngModel)]="numb" (keyup)="calculate()">
+</div>
+
+<div class="alert-container" *ngIf="tf">
+  <div class="alert">
+    <i class="icon">ℹ️</i>
+    <strong>{{ msg }}</strong>
+  </div>
+</div>
+
+<div class="ans">
+  <!-- <button type="submit" (click)="calculate()">Submit</button>   -->
+   
+      <table>
+      <tr>
+        <td #op1>{{ result1 }}</td>
+        <td #op2>{{ result2 }}</td>
+      </tr>
+    </table>
+      
+    <!-- <div #op1>{{result1}}</div>
+    <div #op2>{{result2}}</div> -->
+</div>
+
+<!--</div> -->
+
+<!--
+  </body>
+  </html>  -->
+<!-- </form>  -->
